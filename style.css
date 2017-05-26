@@ -1,8 +1,11 @@
 h1 {
-  background-color: green;
+  font-style: bold;
+  color: red;
+  font-family: 'Sofia';
+  font-size: 22px;
 }
 p {
-  border: 5px solid black;
+  border: 3px solid black;
 }
 .page-content {
   background-color: red;
