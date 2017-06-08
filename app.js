@@ -83,20 +83,26 @@ if (question5.toUpperCase() === 'YES' || question5.toUpperCase() === 'Y') {
 var question6 = prompt('How many Spotify playlists have I created so far?');
 // make it random for stretch goal
 
-for (var i = 0; i < 3; i ++) {
-  while (!question6) {
+for (var i = 1; i < 5; i ++) {
+  console.log('Turn' + i);
+  while (question6 = Null || Nan) {
     question6 = prompt('Try again...');
   }
-  if (question6 == 16) {
-    alert('Dude! You know me so well!');
-    correct ++;
-    console.log(correct);
-    break;
-  } else if (question6 < 16){
+  if (question6 < 16){
+    console.log('Too Low = ' + question6);
     question6 = prompt('Too Low! Guess again?');
-  } else (question6 > 16);
-  question6 = prompt('Too High! Guess again?');
-};
+  } else if (question6 > 16) {
+    console.log('Too High = ' + question6);
+    question6 = prompt('Too High! Guess again?');
+  }
+}
+if (question6 == 16) {
+  alert('Dude! You know me so well!');
+  correct ++;
+  console.log(correct);
+} else {
+  alert('Out of turns... :P');
+}
 
 //var guess = 6;
 var question7 = prompt('Name one band/artist I saw on Memorial Day Weekend at Sasquatch.');
@@ -131,7 +137,7 @@ document.write('<h2>Is Ashley Graham my celebrity crush? Yes!</h2>');
 document.write('<h2> I created 16 playlists.</h2>');
 document.write('<h2>The bands I saw were: Chance The Rapper, Phantogram, The Shins, SISTERS, Chicano Batman, and Boogie!</h2>');
 // Total correct document write print out
-document.write('<h1> You got ' + correct + ' correct out of 7!</h1>');
+/*document.write('<h1> You got ' + correct + ' correct out of 7!</h1>');
 var outcome = question1.length + question2.length + question3.length + question4.length + question5.length + question6.length + question7.length;
 // for fun outcome of my feelings to user
 if (outcome > 12) {
@@ -139,3 +145,4 @@ if (outcome > 12) {
 } else {
   document.write('I hate you.');
 };
+*/
