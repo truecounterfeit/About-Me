@@ -80,12 +80,12 @@ if (question5.toUpperCase() === 'YES' || question5.toUpperCase() === 'Y') {
 };
 */
 
-var question6 = prompt('How many Spotify playlists have I created so far?');
+var question6 = prompt('How many Spotify playlists have I created so far? Guess a number.');
 // make it random for stretch goal
 
 for (var i = 1; i < 5; i ++) {
   console.log('Turn' + i);
-  while (question6 = Null || Nan) {
+  while (isNaN(question6)) {
     question6 = prompt('Try again...');
   }
   if (question6 < 16){
@@ -108,7 +108,7 @@ if (question6 == 16) {
 var question7 = prompt('Name one band/artist I saw on Memorial Day Weekend at Sasquatch.');
 var bands = ['Chance The Rapper', 'Phantogram', 'The Shins', 'SISTERS', 'Chicano Batman', 'Boogie'];
 // while loop
-for (var i = 0; i < 5; i ++) {
+for (var i = 1; i < 6; i ++) {
 //while (!question7) {
 //question7 = prompt('Try again...')
 //};
@@ -123,12 +123,14 @@ for (var i = 0; i < 5; i ++) {
   //} while (!question7) {
     //prompt('I thought you were my friend... Try Again?');
   } else {
-    prompt('I thought you were my friend... Try Again?');
+    prompt('Ughh... Try Again?');
+    console.log('Wrong = ' + question7);
     //guess --;
   }
 };
 
 //Questions 1 - 7 document write Answers print out
+document.write('<h1>You have completed the guessing game!</h1>');
 document.write('<h2> Do I have siblings? Yes!</h2>');
 document.write('<h2>Is crimson my favorite color? Yes!</h2>');
 document.write('<h2>Did I eat Oatmel for breafast on Tuesday? No!</h2>');

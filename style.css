@@ -1,15 +1,25 @@
 h1 {
   font-style: bold;
-  color: red;
+  color: crimson;
   font-family: 'Sofia';
   font-size: 22px;
 }
-p {
 
+p {
+  text-align: left;
+  color: white;
+  -webkit-test-stroke: 1px black;
 }
-.page-content {
-  background-color: red;
+#nav {
+  background-color: gray;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
 }
-#unique-p-tag {
-  background-color: blue;
+
+#nav li {
+  display: inline;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
 }
