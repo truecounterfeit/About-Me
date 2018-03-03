@@ -1,6 +1,8 @@
 # About-Me
 This is a simple website showcasing information about me!
 
+https://truecounterfeit.github.io/About-Me/
+
 User Stories
 7/16/17
 
